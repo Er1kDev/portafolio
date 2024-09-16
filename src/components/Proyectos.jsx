@@ -1,4 +1,6 @@
 
+import carwash from '../assets/images/carwash.png';
+
 export default function Proyectos() {
     return (
         <section id="proyectos" className="text-white section undefined scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
@@ -8,7 +10,7 @@ export default function Proyectos() {
             </h2>
 
             <div className="grid gap-2 md:grid-cols-2">
-                <img className="rounded-2xl shadow-xl object-cover object-top w-full h-56 transition duration-500 hover:scale-95" src="portafolio/public/images/carwash.png" alt="" />
+                <img className="rounded-2xl shadow-xl object-cover object-top w-full h-56 transition duration-500 hover:scale-95" src={carwash} alt="" />
                 <div className="flex flex-col gap-2 py-5 md:py-0 px-0 md:px-5">
                     <h3 className="text-3xl font-semibold">Carwash Black</h3>
                     <p className="text-gray-400">
