@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
           <span class="text-sm sm:text-center text-zinc-200/90">© 2024 Er1kDev. derechos reservados
           </span>
           <ul className='flex flex-wrap items-center mt-3 text-sm font-medium text-white/90 sm:mt-0'>
-            <li> <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a> </li>
+            <li> <a href="#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a> </li>
             <li> <a href="mailto:erick_caceres@outlook.cl" class="hover:underline me-4 md:me-6">Contacto</a> </li>
           </ul>
         </div>
