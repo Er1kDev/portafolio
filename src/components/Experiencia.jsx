@@ -3,14 +3,14 @@ export default function Experiencia() {
     return (
         <section id="experiencia" className='section undefined scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl'>
 
-            <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 dark:text-white">
+            <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-gray-800 dark:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M14 2a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3zm0 2h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1" /></svg>
                 Experiencia Laboral
             </h2>
 
             <ol className="relative mt-16 text-white">
                 <li>
-                    <div className="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black dark:before:border-white before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
+                    <div className="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
                         <div className="relative pb-12 md:col-span-2">
                             <div className="sticky top-0">
                                 <span className="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">•</span>
@@ -30,7 +30,7 @@ export default function Experiencia() {
                     </div>
                 </li>
                 <li>
-                    <div className="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black dark:before:border-white before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
+                    <div className="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
                         <div className="relative pb-12 md:col-span-2">
                             <div className="sticky top-0">
                                 <span className="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">•</span>
