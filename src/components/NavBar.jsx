@@ -1,5 +1,9 @@
 
 import React, { useEffect, useState } from 'react'
+import { data } from '../assets/data/data'
+
+const { redes } = data;
+const cv = redes[2];
 
 export default function NavBar() {
 
@@ -28,7 +32,7 @@ export default function NavBar() {
                 <a className='relative block px-2 py-2 transition hover:text-blue-700 ' href="#proyectos">Proyectos</a>
                 <a className='relative block px-2 py-2 transition hover:text-blue-700 ' href="#sobre-mi">Sobre mí</a>
                 <a className='relative block px-2 py-2 transition hover:text-blue-700 ' href="mailto:erick_caceres@outlook.cl">Contacto</a>
-                <a className='relative block px-2 py-2 transition hover:text-blue-700 ' href="https://drive.google.com/file/d/11pbv_hbKXZFQk3I8v56-uahDYXYelU6n/view?usp=sharing" target='_blank' rel='noreferrer'>CV</a>
+                <a className='relative block px-2 py-2 transition hover:text-blue-700 ' href={cv.url} target='_blank' rel='noreferrer'>{cv.nombre}</a>
 
             </nav>
         </header>

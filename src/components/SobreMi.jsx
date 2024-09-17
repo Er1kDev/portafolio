@@ -13,10 +13,10 @@ export default function SobreMi() {
             <article className="flex flex-col md:flex-row items-center justify-center gap-8">
 
                 <p className="order-2 md:order-1 text-gray-400">
-                    Me llamo Erik Cáceres, apasionado por la tecnología y la programación en la cual
-                    estoy en constante aprendizaje para mejorar mis habilidades para resolver problemas
-                    a traves de la tecnología. Me encuentro en la búsqueda de nuevas oportunidades laborales
-                    en el área de desarrollo web.
+                    Me llamo Erik Cáceres, apasionado por la tecnología y la programación en la
+                    cual estoy en constante aprendizaje para mejorar mis habilidades para resolver
+                    problemas a través de la tecnología. Me encuentro en la búsqueda de nuevas
+                    oportunidades laborales en el área de desarrollo web.
                 </p>
                 <img className="rounded-3xl order-1 md:order-2 w-64 h-full p-2 object-cover" width={200} height={200} src={imgURL} alt="me" />
 

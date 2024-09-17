@@ -1,8 +1,8 @@
 import { data } from '../assets/data/data';
 
 const { alias, foto, carrera, redes } = data;
-const linkedin = redes[1];
 const github = redes[0];
+const linkedin = redes[1];
 
 export default function Header() {
 
@@ -24,8 +24,7 @@ export default function Header() {
                 </div>
                 <h1 className='text-4xl font-bold text-white'>Hello World, soy "{alias}" ✌️</h1>
                 <p className=' text-gray-400 mt-6 [&>strong]:text-yellow-500'>
-                    Egresado de <strong>{carrera}</strong> en 2024 y apasionado por la programación y la tecnología
-                    en especial en el area del desarrollo Web.
+                    Egresado de <strong>{carrera}</strong> en 2024 y apasionado por la programación y la tecnología en especial en el área del desarrollo Web.
                 </p>
 
                 <nav className='flex flex-wrap gap-4 mt-8'>

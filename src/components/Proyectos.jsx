@@ -14,7 +14,7 @@ export default function Proyectos() {
                 <div className="flex flex-col gap-2 py-5 md:py-0 px-0 md:px-5">
                     <h3 className="text-3xl font-semibold">Carwash Black</h3>
                     <p className="text-gray-400">
-                        Pagina web que
+                        Página web que
                         ofrece servicios de lavado de autos, en la cual se puede ver
                         información sobre los servicios, precios y contacto.
                     </p>
