@@ -34,7 +34,7 @@ export default function Experiencia() {
                         <div className="relative pb-12 md:col-span-2">
                             <div className="sticky top-0">
                                 <span className="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">•</span>
-                                <h3 className="text-xl font-bold text-yellow-300">Práctica Profesional</h3>
+                                <h3 className="text-xl font-bold text-yellow-300">Práctica Profesional Analista Programador</h3>
                                 <h4 className="p-0 m-0 text-sm text-gray-600 dark:text-gray-300">Febrero 2019 - Mayo 2019</h4>
                             </div>
                         </div>
