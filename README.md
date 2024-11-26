@@ -3,6 +3,6 @@
 ## 🚀Desarrollado con Astro
 
 
-![page](img/page.png)
+![page](/public/img/page.png)
 
 
