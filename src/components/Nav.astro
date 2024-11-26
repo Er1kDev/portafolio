@@ -1,0 +1,58 @@
+---
+
+---
+
+<header
+    class="fixed z-10 top-0 flex items-center justify-center w-full mx-auto mt-2"
+>
+    <nav
+        class="text-white flex px-3 py-0 text-sm md:text-base transition-all justify-center rounded-full"
+    >
+        <a
+            class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-blue-500 hover:scale-105 focus:text-blue-500"
+            href="#experiencia">Experiencia</a
+        >
+        <a
+            class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-blue-500 hover:scale-105 focus:text-blue-500"
+            href="#proyectos">Proyectos</a
+        >
+        <a
+            class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-blue-500 hover:scale-105 focus:text-blue-500"
+            href="#sobreMi">Sobre Mí</a
+        >
+        <a
+            class="block relative px-1 md:px-3 py-1 transition hover:text-blue-500 hover:scale-105"
+            href="mailto:erick_caceres@outlook.cl">Contacto</a
+        >
+        <a
+            class="block relative px-1 md:px-3 py-1 transition hover:text-blue-500 hover:scale-105"
+            href="https://drive.google.com/file/d/11pbv_hbKXZFQk3I8v56-uahDYXYelU6n/view?usp=drive_link"
+            target="_blank">CV</a
+        >
+    </nav>
+</header>
+
+<script>
+    document.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (nav) {
+            if (window.scrollY > 60) {
+                nav.classList.add("bg-blue-950");
+            } else {
+                nav.classList.remove("bg-blue-950");
+            }
+        }
+    });
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const href = link.getAttribute("href");
+            if (!href) return;
+            const section = document.querySelector(href);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+</script>
