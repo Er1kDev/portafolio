@@ -13,16 +13,17 @@
             <a
                 class="text-white flex items-center md:justify-center transition hover:scale-105"
                 href="https://www.linkedin.com/in/er1kdev/"
+                target="_blank"
             >
-                <div class="bg-blue-950 px-3 py-1 rounded-full">
+                <div class="bg-violet-900 px-3 py-1 rounded-full">
                     Disponible para trabajar
                 </div>
             </a>
         </div>
         <h1 class="text-4xl md:text-5xl text-white font-bold">
-            Hola, soy Er1kDev
+            Hola, soy <span class="typed"></span>
         </h1>
-        <p class="text-gray-300 mt-6 text-xl [&>strong]:text-blue-600">
+        <p class="text-gray-300 mt-6 text-xl [&>strong]:text-violet-400">
             Egresado de <strong>Ingeniería en Informática</strong>, apasoniado
             por la programación y la tecnología en especial por el <strong
                 >Desarrollo Front-End</strong
@@ -31,7 +32,7 @@
         </p>
         <nav class="text-white flex flex-wrap gap-4 mt-8">
             <a
-                class="text-xl gap-2 inline-flex justify-center items-center bg-blue-950 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
+                class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
                 href="mailto:erick_caceres@outlook.cl"
             >
                 <svg
@@ -55,7 +56,7 @@
                 Contactame</a
             >
             <a
-                class="text-xl gap-2 inline-flex justify-center items-center bg-blue-950 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
+                class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
                 href="https://www.linkedin.com/in/er1kdev/"
                 target="_blank"
             >
@@ -83,7 +84,7 @@
                 LinkedIn</a
             >
             <a
-                class="text-xl gap-2 inline-flex justify-center items-center bg-blue-950 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
+                class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
                 href="https://github.com/Er1kDev"
                 target="_blank"
             >
@@ -109,3 +110,14 @@
         </nav>
     </div>
 </section>
+
+<script>
+    import Typed from "typed.js";
+
+    new Typed(".typed", {
+        strings: ["Erik", "Er1kDev"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+    });
+</script>
