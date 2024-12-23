@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import carwash from "../Images/carwash.webp";
 ---
 
 <section
@@ -31,12 +32,7 @@
     <div class="grid md:grid-cols-2 py-6 md:py-10 gap-x-12">
         <div class="pb-6 md:pb-0 object-cover overflow-hidden transform">
             <div class="overflow-hidden rounded shadow-lg">
-                <img
-                    src="img/carwash.webp"
-                    alt="carwash black"
-                    class="transition-transform duration-300 hover:scale-110 object-cover"
-                    loading="lazy"
-                />
+                <Image src={carwash} alt="Carwash Black" class="transition-transform duration-300 hover:scale-110 object-contain" />
             </div>
         </div>
         <div>

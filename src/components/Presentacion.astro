@@ -1,15 +1,13 @@
 ---
+import { Image } from "astro:assets";
+import fotoPerfil from "../Images/foto.webp";
 
 ---
 
 <section class="py-36 scroll-m-20 w-full mx-auto container md:max-w-4xl">
     <div class="max-w-xl">
         <div class="flex gap-4 mb-4">
-            <img
-                src="img/foto.webp"
-                alt="foto-perfil"
-                class="rounded-full size-20 shadow-lg"
-            />
+            <Image src={fotoPerfil} alt="Foto de perfil" class="rounded-full size-20 shadow-lg object-contain" />
             <a
                 class="text-white flex items-center md:justify-center transition hover:scale-105"
                 href="https://www.linkedin.com/in/er1kdev/"
@@ -24,7 +22,7 @@
             Hola, soy <span class="typed"></span>
         </h1>
         <p class="text-gray-300 mt-6 text-xl [&>strong]:text-violet-400">
-            Egresado de <strong>Ingeniería en Informática</strong>, apasoniado
+            Titulado de <strong>Ingeniería en Informática</strong>, apasoniado
             por la programación y la tecnología en especial por el <strong
                 >Desarrollo Front-End</strong
             >. Actualmente me encuentro en la búsqueda de nuevas oportunidades
