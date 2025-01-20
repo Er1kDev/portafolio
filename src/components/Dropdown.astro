@@ -1,0 +1,52 @@
+---
+
+---
+
+<div class="relative inline-block text-left">
+    <button
+        id="dropdown-button"
+        class="text-white text-center inline-flex items-center py-1 px-2 transition"
+        type="button"
+    >
+        Dropdown
+    </button>
+
+    <div
+        id="dropdown-menu"
+        class="hidden bg-white w-44 absolute rounded-lg shadow-lg mt-2 z-10 opacity-0 transform transition-all duration-300 ease-in-out"
+    >
+        <ul class="py-2 text-sm text-gray-700">
+            <li>
+                <a href="#" class="block px-4 hover:bg-gray-100">Opcion 1</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 hover:bg-gray-100">Opcion 2</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const dropdownButton = document.getElementById("dropdown-button");
+    const dropdownMenu = document.getElementById("dropdown-menu");
+
+    dropdownButton?.addEventListener("click", () => {
+        dropdownMenu?.classList.toggle("hidden");
+        // Pequeño timeout para que la transición sea visible
+        setTimeout(() => {
+            dropdownMenu?.classList.toggle("opacity-0");
+            dropdownMenu?.classList.toggle("opacity-100");
+            dropdownMenu?.classList.toggle("translate-y-2");
+            dropdownMenu?.classList.toggle("translate-y-0");
+        }, 1);
+    });
+
+    window.addEventListener("click", (e) => {
+        if (!dropdownButton?.contains(e.target as Node)) {
+            dropdownMenu?.classList.add("opacity-0", "translate-y-2");
+            setTimeout(() => {
+                dropdownMenu?.classList.add("hidden");
+            }, 100);
+        }
+    });
+</script>
