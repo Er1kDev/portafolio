@@ -9,18 +9,18 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Er1kDev - Portafolio">
-	<div
-		class="inset-0 -z-10 h-full w-full items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
-	>
-		<Nav />
-		<main class="px-4">
-			<Presentacion client:load />
-			<div class="space-y-24">
-				<Experiencia />
-				<Proyectos />
-				<SobreMi />
-				<Footer />
-			</div>
-		</main>
-	</div>
+  <div
+    class="inset-0 -z-10 h-full w-full items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+  >
+    <Nav />
+    <main class="px-4">
+      <Presentacion />
+      <div class="space-y-24">
+        <Experiencia />
+        <Proyectos />
+        <SobreMi />
+        <Footer />
+      </div>
+    </main>
+  </div>
 </Layout>
