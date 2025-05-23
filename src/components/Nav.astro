@@ -1,58 +1,55 @@
 ---
-import Dropdown from "./Dropdown.astro";
+const driveLink =
+  "https://drive.google.com/file/d/1tbPn9EdOrDu_y0m7CPd5WmHLp41LfWh5/view?usp=drive_link";
 ---
 
 <header
-    class="fixed z-10 top-0 flex items-center justify-center w-full mx-auto mt-2"
+  class="fixed z-10 top-0 flex items-center justify-center w-full mx-auto mt-2"
 >
-    <nav
-        class="text-white flex px-3 py-0 text-sm md:text-base transition-all justify-center rounded-full"
+  <nav
+    class="text-white flex px-3 py-0 text-sm md:text-base transition-all justify-center rounded-full"
+  >
+    <a
+      class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105 focus:text-violet-300"
+      href="#experiencia">Experiencia</a
     >
-        <a
-            class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105 focus:text-violet-300"
-            href="#experiencia">Experiencia</a
-        >
-        <a
-            class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105 focus:text-violet-300"
-            href="#proyectos">Proyectos</a
-        >
-        <a
-            class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105 focus:text-violet-300"
-            href="#sobreMi">Sobre Mí</a
-        >
-        <a
-            class="block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105"
-            href="mailto:erick_caceres@outlook.cl">Contacto</a
-        >
-        <a
-            class="block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105"
-            href="https://drive.google.com/file/d/11pbv_hbKXZFQk3I8v56-uahDYXYelU6n/view?usp=drive_link"
-            target="_blank">CV</a
-        >
-    </nav>
+    <a
+      class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105 focus:text-violet-300"
+      href="#proyectos">Proyectos</a
+    >
+    <a
+      class="nav-link block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105 focus:text-violet-300"
+      href="#sobreMi">Sobre Mí</a
+    >
+    <a
+      class="block relative px-1 md:px-3 py-1 transition hover:text-violet-300 hover:scale-105"
+      href={driveLink}
+      target="_blank">CV</a
+    >
+  </nav>
 </header>
 
 <script>
-    document.addEventListener("scroll", () => {
-        const nav = document.querySelector("nav");
-        if (nav) {
-            if (window.scrollY > 60) {
-                nav.classList.add("bg-violet-900");
-            } else {
-                nav.classList.remove("bg-violet-900");
-            }
-        }
-    });
+  document.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (nav) {
+      if (window.scrollY > 60) {
+        nav.classList.add("bg-violet-900");
+      } else {
+        nav.classList.remove("bg-violet-900");
+      }
+    }
+  });
 
-    document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const href = link.getAttribute("href");
-            if (!href) return;
-            const section = document.querySelector(href);
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-            }
-        });
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = link.getAttribute("href");
+      if (!href) return;
+      const section = document.querySelector(href);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     });
+  });
 </script>

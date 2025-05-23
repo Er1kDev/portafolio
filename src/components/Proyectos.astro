@@ -4,124 +4,123 @@ import carwash from "../Images/carwash.webp";
 ---
 
 <section
-    class="scroll-m-20 w-full mx-auto container md:max-w-4xl"
-    id="proyectos"
+  class="scroll-m-20 w-full mx-auto container md:max-w-4xl"
+  id="proyectos"
 >
-    <h2
-        class="text-white text-3xl flex items-center font-semibold gap-x-3 drop-shadow-lg pb-10"
+  <h2
+    class="text-white text-3xl flex items-center font-semibold gap-x-3 drop-shadow-lg pb-10"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-code-circle"
     >
-        <svg
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M10 14l-2 -2l2 -2"></path>
+      <path d="M14 10l2 2l-2 2"></path>
+      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+    </svg>
+    Proyectos
+  </h2>
+  <div class="grid md:grid-cols-2 py-6 md:py-10 gap-x-12">
+    <div class="pb-6 md:pb-0 object-cover overflow-hidden transform">
+      <div class="overflow-hidden rounded shadow-lg">
+        <Image
+          src={carwash}
+          alt="Carwash Black"
+          class="transition-transform duration-300 hover:scale-110 object-contain"
+        />
+      </div>
+    </div>
+    <div>
+      <p class="text-white text-3xl font-semibold drop-shadow-lg py-2">
+        CarWash Black
+      </p>
+      <nav class="text-white flex flex-wrap py-2 drop-shadow-lg gap-2">
+        <p
+          class="shadow-lg text-sm gap-1 inline-flex justify-center items-center bg-purple-800 rounded-full px-3 py-1 transition hover:bg-white hover:text-black"
+        >
+          <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="16"
+            height="16"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-code-circle"
-        >
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-astro"
+          >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M10 14l-2 -2l2 -2"></path>
-            <path d="M14 10l2 2l-2 2"></path>
-            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+            <path
+              d="M14.972 3.483c.163 .196 .247 .46 .413 .987l3.64 11.53a15.5 15.5 0 0 0 -4.352 -1.42l-2.37 -7.723a.31 .31 0 0 0 -.296 -.213a.31 .31 0 0 0 -.295 .214l-2.342 7.718a15.5 15.5 0 0 0 -4.37 1.422l3.657 -11.53c.168 -.527 .251 -.79 .415 -.986c.144 -.172 .331 -.306 .544 -.388c.242 -.094 .527 -.094 1.099 -.094h2.612c.572 0 .858 0 1.1 .094c.213 .082 .4 .217 .545 .39"
+            ></path>
+            <path d="M9 18c0 1.5 2 3 3 4c1 -1 3 -3 3 -4q -3 1.5 -6 0"></path>
+          </svg>
+          Astro
+        </p>
+        <p
+          class="shadow-lg text-sm gap-1 inline-flex justify-center items-center bg-blue-950 rounded-full px-3 py-1 transition hover:bg-white hover:text-black"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tailwind"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z"
+            ></path>
+          </svg>
+          Tailwind CSS
+        </p>
+      </nav>
+      <p class="text-white drop-shadow-xl py-2">
+        Sitio web desarrollado con Astro y Tailwind CSS que ofrece servicios de
+        lavado de autos, proporcionando información detallada sobre servicios,
+        precios y opciones de contacto.
+      </p>
+      <a
+        class="bg-violet-900 inline-flex shadow-lg px-3 py-1 items-center text-sm justify-center gap-1 rounded-full text-white transition hover:bg-white hover:text-black"
+        href="https://carwashblack2.netlify.app/"
+        target="_blank"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M9 15l6 -6"></path>
+          <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path>
+          <path
+            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+          ></path>
         </svg>
-        Proyectos
-    </h2>
-    <div class="grid md:grid-cols-2 py-6 md:py-10 gap-x-12">
-        <div class="pb-6 md:pb-0 object-cover overflow-hidden transform">
-            <div class="overflow-hidden rounded shadow-lg">
-                <Image src={carwash} alt="Carwash Black" class="transition-transform duration-300 hover:scale-110 object-contain" />
-            </div>
-        </div>
-        <div>
-            <p class="text-white text-3xl font-semibold drop-shadow-lg py-2">
-                CarWash Black
-            </p>
-            <nav class="text-white flex flex-wrap py-2 drop-shadow-lg gap-2">
-                <a
-                    class="shadow-lg text-sm gap-1 inline-flex justify-center items-center bg-purple-800 rounded-full px-3 py-1 transition hover:bg-white hover:text-black"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-astro"
-                    >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"
-                        ></path>
-                        <path
-                            d="M14.972 3.483c.163 .196 .247 .46 .413 .987l3.64 11.53a15.5 15.5 0 0 0 -4.352 -1.42l-2.37 -7.723a.31 .31 0 0 0 -.296 -.213a.31 .31 0 0 0 -.295 .214l-2.342 7.718a15.5 15.5 0 0 0 -4.37 1.422l3.657 -11.53c.168 -.527 .251 -.79 .415 -.986c.144 -.172 .331 -.306 .544 -.388c.242 -.094 .527 -.094 1.099 -.094h2.612c.572 0 .858 0 1.1 .094c.213 .082 .4 .217 .545 .39"
-                        ></path>
-                        <path
-                            d="M9 18c0 1.5 2 3 3 4c1 -1 3 -3 3 -4q -3 1.5 -6 0"
-                        ></path>
-                    </svg>
-                    Astro</a
-                >
-                <a
-                    class="shadow-lg text-sm gap-1 inline-flex justify-center items-center bg-blue-950 rounded-full px-3 py-1 transition hover:bg-white hover:text-black"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tailwind"
-                    >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"
-                        ></path>
-                        <path
-                            d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z"
-                        ></path>
-                    </svg>
-                    Tailwind CSS</a
-                >
-            </nav>
-            <p class="text-white drop-shadow-xl py-2">
-                Página web que ofrece servicios de lavado de autos, en la cual
-                se puede ver información sobre los servicios, precios y
-                contacto.
-            </p>
-            <a
-                class="bg-violet-900 inline-flex shadow-lg px-3 py-1 items-center text-sm justify-center gap-1 rounded-full text-white transition hover:bg-white hover:text-black"
-                href="https://carwashblack.netlify.app/"
-                target="_blank"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M9 15l6 -6"></path>
-                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                    ></path>
-                    <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                    ></path>
-                </svg>
-                Preview
-            </a>
-        </div>
+        Preview
+      </a>
     </div>
+  </div>
 </section>

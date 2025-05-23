@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import fotoPerfil from "../Images/foto.webp";
+const linkedInUrl = "https://www.linkedin.com/in/er1kdev/";
+const githubUrl = "https://github.com/Er1kDev";
 ---
 
 <section class="py-36 scroll-m-20 w-full mx-auto container md:max-w-4xl">
@@ -10,10 +12,11 @@ import fotoPerfil from "../Images/foto.webp";
         src={fotoPerfil}
         alt="Foto de perfil"
         class="rounded-full size-20 shadow-lg object-contain"
+        loading="eager"
       />
       <a
         class="text-white flex items-center md:justify-center transition hover:scale-105"
-        href="https://www.linkedin.com/in/er1kdev/"
+        href={linkedInUrl}
         target="_blank"
       >
         <div class="bg-violet-900 px-3 py-1 rounded-full">
@@ -25,40 +28,15 @@ import fotoPerfil from "../Images/foto.webp";
       Hola, soy <span class="typed"></span>
     </h1>
     <p class="text-gray-300 mt-6 text-xl [&>strong]:text-violet-400">
-      Titulado de <strong>Ingeniería en Informática</strong>, apasionado por la
-      programación y la tecnología en especial por el <strong
-        >Desarrollo Front-End</strong
-      >. Actualmente me encuentro en la búsqueda de nuevas oportunidades
-      laborales.
+      <strong>Ingeniero en Informática</strong> con pasión por la programación y
+      la tecnología, especialmente en el <strong>Desarrollo Web</strong>.
+      Actualmente, busco nuevas oportunidades laborales para aplicar y expandir
+      mis habilidades.
     </p>
     <nav class="text-white flex flex-wrap gap-4 mt-8">
       <a
         class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
-        href="mailto:erick_caceres@outlook.cl"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-          ></path>
-          <path d="M3 7l9 6l9 -6"></path>
-        </svg>
-        Contactame</a
-      >
-      <a
-        class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
-        href="https://www.linkedin.com/in/er1kdev/"
+        href={linkedInUrl}
         target="_blank"
       >
         <svg
@@ -86,7 +64,7 @@ import fotoPerfil from "../Images/foto.webp";
       >
       <a
         class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
-        href="https://github.com/Er1kDev"
+        href={githubUrl}
         target="_blank"
       >
         <svg
