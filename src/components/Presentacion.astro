@@ -1,8 +1,15 @@
 ---
 import { Image } from "astro:assets";
 import fotoPerfil from "../Images/foto.webp";
-const linkedInUrl = "https://www.linkedin.com/in/er1kdev/";
-const githubUrl = "https://github.com/Er1kDev";
+
+const presentacion = {
+  title: "Hola, soy Erik",
+  descripcion: `<strong>Ingeniero en Informática</strong> con pasión por la programación y la tecnología, especialmente en el <strong>Desarrollo Web</strong>. Actualmente, busco nuevas oportunidades laborales para aplicar y expandir mis habilidades.`,
+  linkedIn: "https://www.linkedin.com/in/er1kdev/",
+  github: "https://github.com/Er1kDev",
+};
+
+const { title, descripcion, linkedIn, github } = presentacion;
 ---
 
 <section class="py-36 scroll-m-20 w-full mx-auto container md:max-w-4xl">
@@ -16,7 +23,7 @@ const githubUrl = "https://github.com/Er1kDev";
       />
       <a
         class="text-white flex items-center md:justify-center transition hover:scale-105"
-        href={linkedInUrl}
+        href={linkedIn}
         target="_blank"
       >
         <div class="bg-violet-900 px-3 py-1 rounded-full">
@@ -27,16 +34,14 @@ const githubUrl = "https://github.com/Er1kDev";
     <h1 class="text-4xl md:text-5xl text-white font-bold">
       Hola, soy <span class="typed"></span>
     </h1>
-    <p class="text-gray-300 mt-6 text-xl [&>strong]:text-violet-400">
-      <strong>Ingeniero en Informática</strong> con pasión por la programación y
-      la tecnología, especialmente en el <strong>Desarrollo Web</strong>.
-      Actualmente, busco nuevas oportunidades laborales para aplicar y expandir
-      mis habilidades.
-    </p>
+    <p
+      class="text-gray-300 mt-6 text-xl [&>strong]:text-violet-400"
+      set:html={descripcion}
+    />
     <nav class="text-white flex flex-wrap gap-4 mt-8">
       <a
         class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
-        href={linkedInUrl}
+        href={linkedIn}
         target="_blank"
       >
         <svg
@@ -64,7 +69,7 @@ const githubUrl = "https://github.com/Er1kDev";
       >
       <a
         class="text-xl gap-2 inline-flex justify-center items-center bg-violet-900 rounded-full px-4 py-1 transition hover:bg-white hover:text-black"
-        href={githubUrl}
+        href={github}
         target="_blank"
       >
         <svg
